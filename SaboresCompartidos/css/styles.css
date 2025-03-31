@@ -1,4 +1,10 @@
 *
 {
-	
+	--bs-primary-rgb: 0, 163, 125;
+}
+
+body
+{
+	max-width: 100vw;
+	min-height: 100vh;
 }
