@@ -1,6 +1,8 @@
 *
 {
-	--bs-primary-rgb: 0, 163, 125;
+	--bs-primary-rgb: 251, 176, 59;
+	--bs-secondary-rgb: 102, 45, 145;
+	--bs-success-rgb: 0, 150, 100;
 }
 
 body
