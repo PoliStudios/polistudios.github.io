@@ -1,5 +1,5 @@
 </main>
 
-<?php include "extend/footer.php";?>
+<?php include ROOT."extend/footer.php";?>
 </body>
 </html>

@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /polistudios.github.io/SaboresCompartidos/
+
+RewriteRule Updates/ pages/Updates.php
+RewriteRule AboutUs/ pages/AboutUs.php
+RewriteRule Register/ pages/Register.php

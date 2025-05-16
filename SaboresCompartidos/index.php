@@ -1,4 +1,11 @@
-<?php include "extend/top.php";?>
+<?php
+include_once 'scripts/config.php';
+
+$title = "Inicio";
+$menu = 0;
+?>
+
+<?php include ROOT."extend/top.php";?>
 	<div id="carouselMain" class="carousel slide">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -44,5 +51,5 @@
 			</div>
 		</div>
 	</div>
-<?php include "extend/bottom.php";?>
+<?php include ROOT."extend/bottom.php";?>
 	

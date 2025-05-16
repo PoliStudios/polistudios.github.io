@@ -14,19 +14,19 @@
 				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 					<ul class="navbar-nav mb-2 mb-lg-0 p-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="/">Inicio</a>
+							<a class="nav-link <?=(@$menu == 0) ? "active" : ""?>" aria-current="page" href="">Inicio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" target="_blank" href="file/Manual de Usuario.pdf" download="">Manual de Uso</a>
+							<a class="nav-link <?=(@$menu == 1) ? "active" : ""?>" target="_blank" href="file/Manual de Usuario.pdf" download="">Manual de Uso</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="Updates.html">Actualizaciones</a>
+							<a class="nav-link <?=(@$menu == 2) ? "active" : ""?>" href="Updates/">Actualizaciones</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="Aboutus.html">Sobre Nosotros</a>
+							<a class="nav-link <?=(@$menu == 3) ? "active" : ""?>" href="AboutUs/">Sobre Nosotros</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="register.html">Registrarse porfavor</a>
+							<a class="nav-link <?=(@$menu == 4) ? "active" : ""?>" href="Register/">Registrarse porfavor</a>
 						</li>
 					</ul>
 				</div>
