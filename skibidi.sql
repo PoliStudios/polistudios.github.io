@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `skibidi`
 --
-CREATE DATABASE IF NOT EXISTS `skibidi` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `skibidi`;
 
 -- --------------------------------------------------------
 
@@ -41,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `toilet` (
   `colonia` varchar(30) NOT NULL,
   `alcaldia` varchar(20) NOT NULL,
   PRIMARY KEY (`idToilet`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

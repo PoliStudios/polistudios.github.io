@@ -59,7 +59,7 @@ $menu = 2;
 				Descarga la version alfa con funciones limitadas
 			</p>
 
-			<a class="btn btn-primary">
+			<a class="btn btn-primary" href="file\SaboresCompartidos.alpha.apk">
 				Descargar
 			</a>
 		</div>
