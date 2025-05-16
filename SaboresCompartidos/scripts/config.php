@@ -13,6 +13,14 @@ define('ROOT',
 	'polistudios.github.io/SaboresCompartidos/'
 );
 
+define('MySQL_USER',
+	"root"
+);
+
+define('MySQL_PASSWORD',
+	""
+);
+
 session_start();
 
 ?>
