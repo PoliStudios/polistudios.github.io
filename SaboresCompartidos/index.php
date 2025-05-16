@@ -14,13 +14,13 @@ $menu = 0;
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="#" class="d-block w-100 placeholder" height="512" alt="gatobaboso">
+				<img src="#" class="d-block w-100" height="512" alt="gatobaboso">
 			</div>
 			<div class="carousel-item">
-				<img src="..." class="d-block w-100 placeholder" height="512" alt="...">
+				<img src="..." class="d-block w-100" height="512" alt="...">
 			</div>
 			<div class="carousel-item">
-				<img src="img/gatoinsano.jpg" class="d-block w-100 placeholder" height="512" alt="...">
+				<img src="img/gatoinsano.jpg" class="d-block w-100" height="512" alt="...">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
@@ -47,7 +47,7 @@ $menu = 0;
 				</a>
 			</div>
 			<div class="col-auto">
-				<img src="..." class="d-block placeholder" height="512" width="384" alt="...">
+				<img src="img/edicion.png" class="d-block" height="512" width="384" alt="...">
 			</div>
 		</div>
 	</div>
