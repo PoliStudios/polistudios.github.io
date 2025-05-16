@@ -15,29 +15,34 @@ try {
     // Conectar a la base de datos
     $dbh = new PDO($dsn, MySQL_USER, MySQL_PASSWORD);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Conectando a la base de datos... <br>";
+    echo "Checando datos... <br>";
 
     // Verificar campos obligatorios
-    $camposRequeridos = ['nombre', 'apPat', 'apMat', 'direccion', 'telefono', 'cp', 'colonia', 'alcaldia'];
+    $camposRequeridos = ['nombre', 'apellidoP', 'apelldioM', 'direccion', 'telefono', 'codigoPo', 'colonia', 'alcaldia'];
     foreach ($camposRequeridos as $campo) {
         if (!isset($_POST[$campo]) || empty(trim($_POST[$campo]))) {
             throw new Exception("Falta el campo requerido: $campo");
         }
     }
+        echo "Datos correctos. <br>";
 
     // Obtener y limpiar datos
     $nombre    = trim($_POST['nombre']);
-    $ePat     = trim($_POST['apellidoP']);
+    $aPat     = trim($_POST['apellidoP']);
     $AmAT      = trim($_POST['apelldioM']);
     $Direccion      = trim($_POST['direccion']);
-    $Telefono  = trim($_POST['telofono']);
+    $Telefono  = trim($_POST['telefono']);
     $CP = trim($_POST['codigoPo']);
     $Colonia  = trim($_POST['colonia']);
-    $Alcaldia  = trim($_POST['alacaldia']);
+    $Alcaldia  = trim($_POST['alcaldia']);
+        echo "Datos obtenidos <br>";
+
 
     // Preparar e insertar datos
-    $stmt = $dbh->prepare("INSERT INTO Usuarios VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $dbh->prepare("INSERT INTO toilet VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->bindParam(1, $nombre);
-    $stmt->bindParam(2, $aPaT);
+    $stmt->bindParam(2, $aPat);
     $stmt->bindParam(3, $AmAT);
     $stmt->bindParam(4, $Direccion);
     $stmt->bindParam(5, $Telefono);
@@ -46,13 +51,16 @@ try {
     $stmt->bindParam(8, $Alcaldia);
     $stmt->execute();
 
+        echo "sql ejecutado <br>";
+
+
     // Redirigir tras unos segundos (seguro)
-    echo '<meta http-equiv="refresh" content="2;url=/">';
+    echo '<meta http-equiv="refresh" content="2;url=/SaboresCompartidos/">';
     exit;
 
 } catch (PDOException $e) {
     echo "❌ Error de base de datos: " . $e->getMessage();
-} catch (Exception $e) {
+} catch (Error $e) {
     echo "❌ Error: " . $e->getMessage();
 }
 ?>

@@ -6,7 +6,7 @@ $menu = 0;
 ?>
 
 <?php include ROOT."extend/top.php";?>
-	<div id="carouselMain" class="carousel slide">
+	<div id="carouselMain" class="carousel slide w-75 mx-auto">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 			<button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -14,13 +14,13 @@ $menu = 0;
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="#" class="d-block w-100" height="512" alt="gatobaboso">
+				<img src="img/cocina.png" class="d-block w-100"  alt="gatobaboso">
 			</div>
 			<div class="carousel-item">
-				<img src="..." class="d-block w-100" height="512" alt="...">
+				<img src="img/Sopa.jpg" class="d-block w-100"  alt="...">
 			</div>
 			<div class="carousel-item">
-				<img src="img/gatoinsano.jpg" class="d-block w-100" height="512" alt="...">
+				<img src="img/gatoinsano3.jpg" class="d-block w-100"  alt="...">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">

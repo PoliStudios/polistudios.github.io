@@ -9,7 +9,7 @@ $menu = 4;
 
  <div class="container py-5" style="max-width: 900px;">
     <h2 class="mb-4 text-center">Formulario de Registro</h2>
-    <form>
+    <form method="POST" action="scripts/conexion.php">
         <div class="row mb-4">
             <div class="col-md-4">
                 <label for="nombre" class="form-label">Nombre</label>
@@ -31,7 +31,7 @@ $menu = 4;
             </div>
             <div class="col-md-4">
                 <label for="telefono" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" id="telefono" name="telofono" required>
+                <input type="tel" class="form-control" id="telefono" name="telefono" required>
             </div>
         </div>
         <div class="row mb-4">
@@ -45,7 +45,7 @@ $menu = 4;
             </div>
             <div class="col-md-4">
                 <label for="alcaldia" class="form-label">Alcaldía</label>
-                <input type="text" class="form-control" id="alcaldia" name="alacaldia" required>
+                <input type="text" class="form-control" id="alcaldia" name="alcaldia" required>
             </div>
         </div>
         <button type="submit" class="btn btn-success w-100">Registrarse</button>
