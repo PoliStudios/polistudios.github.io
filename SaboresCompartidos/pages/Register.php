@@ -37,7 +37,7 @@ $menu = 4;
         <div class="row mb-4">
             <div class="col-md-4">
                 <label for="codigoPostal" class="form-label">Código Postal</label>
-                <input type="text" class="form-control" id="codigoPostal" required>
+                <input type="text" class="form-control" id="codigoPostal" pattern="[0-9]+" required>
             </div>
             <div class="col-md-4">
                 <label for="colonia" class="form-label">Colonia</label>
